@@ -59,12 +59,12 @@ inquirer
   .then(function (answer) {
       console.log(answer);
     // var filename = data.name.toLowerCase().split(" ").join("") + ".json";
-    // fs.writeFile(filename, JSON.stringify(data, null, "\t"), function (err) {
-    //   if (err) {
-    //     return console.log(err);
-    //   }
-    //   console.log("Success!");
-    // });
+    fs.writeFile("sampleReadMe.md", JSON.stringify(answer), function (err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log("Success!");
+    });
   });
 
 // array of questions for user
@@ -73,16 +73,16 @@ inquirer
 
 
 // function to write README file
-function writeToFile(fileName, data) {
-  //Use the fs package
-}
+// function writeToFile(fileName, data) {
+//   //Use the fs package
+// }
 
-// function to initialize program
-function init() {
-  //use the inquirer package
-}
+// // function to initialize program
+// function init() {
+//   //use the inquirer package
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
 
 //Name sampleReadMe.md
