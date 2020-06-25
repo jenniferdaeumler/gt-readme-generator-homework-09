@@ -50,9 +50,10 @@ inquirer
       },
          {
         type: "input",
-        message: "Questions?",
+        message: "What email should questions about your project be sent to?",
         name: "questions",
       },
+      
   ])
 ]
   .then(function (data) {
