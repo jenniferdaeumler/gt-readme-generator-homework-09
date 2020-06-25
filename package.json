@@ -1,14 +1,23 @@
 {
-  "name": "static-site",
+  "name": "gt-readme-generator-homework-09",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenniferdaeumler/gt-readme-generator-homework-09.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+  "bugs": {
+    "url": "https://github.com/jenniferdaeumler/gt-readme-generator-homework-09/issues"
+  },
+  "homepage": "https://github.com/jenniferdaeumler/gt-readme-generator-homework-09#readme"
 }
