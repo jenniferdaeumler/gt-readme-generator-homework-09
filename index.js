@@ -34,9 +34,10 @@ inquirer
         name: "credits",
       },
       {
-        type: "input",
+        type: "list",
         message: "What is your licenses?",
         name: "license",
+        choices: ["MIT", "GPL","Apache License","Mozilla Public License"],
       },
       {
         type: "input",
@@ -58,7 +59,6 @@ inquirer
 
   .then(function (answer) {
       console.log(answer);
-    // var filename = data.name.toLowerCase().split(" ").join("") + ".json";
     fs.writeFile("sampleReadMe.md", JSON.stringify(answer), function (err) {
       if (err) {
         return console.log(err);
