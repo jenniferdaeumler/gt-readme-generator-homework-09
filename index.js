@@ -6,7 +6,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-
+//questions to use as prompts
 const questions = [
     {
         type: "input",
@@ -56,38 +56,22 @@ const questions = [
     },
 
 ]
+
 function init() {
     inquirer.prompt(questions)
-        .then(function (answer) {
-            console.log(answer);
+        .then(function (data) {
+            console.log(data);
 
             //   var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-            fs.writeFile("sampleReadMe.md", generateMarkdown(answer), function (err) {
+            fs.writeFile("sampleReadMe.md", generateMarkdown(data), function (err) {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Success!");
             });
-        })};
-        //function call to initlialize 
-        init();
-
-// array of questions for user
-
-  // https://www.npmjs.com/package/inquirer#questions
+        })
+};
+//function call to initlialize 
+init();
 
 
-// function to write README file
-// function writeToFile(fileName, data) {
-//   //Use the fs package
-// }
-
-// // function to initialize program
-// function init() {
-//   //use the inquirer package
-// }
-
-// // function call to initialize program
-// init();
-
-//Name sampleReadMe.md
