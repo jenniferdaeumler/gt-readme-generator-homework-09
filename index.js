@@ -3,11 +3,11 @@
 
 //require FS
 //require inquire
-var inquirer = require("inquirer");
-var fs = require("fs");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("utils/generateMarkdown.js");
 
-inquirer
-  .prompt([
+const questions =[
     {
       type: "input",
       message: "What is your title?",
@@ -55,11 +55,14 @@ inquirer
         name: "questions",
       },
       
-  ])
-
+  ]
+  function init(){
+inquirer.prompt (questions)
   .then(function (answer) {
       console.log(answer);
-    fs.writeFile("sampleReadMe.md", JSON.stringify(answer), function (err) {
+
+      var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+    fs.writeFile("sampleReadMe.md", generateMarkdown(answer), function (err) {
       if (err) {
         return console.log(err);
       }
