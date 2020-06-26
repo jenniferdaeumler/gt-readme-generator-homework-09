@@ -3,14 +3,24 @@ function generateMarkdown(data) {
   return `# ${data.title} 
 
 ## Description \n ${data.description}
+<!--Table of Contents-->
 ## Installation \n ${data.installation}
 ## Usage \n  ${data.usage}
-## Credits \n ${data.credits}
 ## License \n ${data.license}
-## License \n ${data.contributing}
-## License \n ${data.tests}
-## License \n ${data.questions}
+## Contributing \n ${data.contributing}
+## Tests \n ${data.tests}
+## Questions \n For questions related to this project, connect with me on GitHub at https://www.github.com/${data.username}. Or email me with questions at ${data.email}. 
 `;
 }
 
 module.exports = generateMarkdown;
+
+
+// WHEN I choose a license for my application from a list of options
+// THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+// WHEN I enter my GitHub username
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// WHEN I enter my email address
+// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+// WHEN I click on the links in the Table of Contents
+// THEN I am taken to the corresponding section of the README
