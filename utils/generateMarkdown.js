@@ -3,18 +3,22 @@ function generateMarkdown(data) {
   return `# ${data.title} 
 
 ## Description \n ${data.description}
+<img src="https://img.shields.io/badge/license-MIT-green"/>
+<img src="https://img.shields.io/badge/license-GPL-blue"/>
+<img src="https://img.shields.io/badge/license-Apache-blue"/>
+<img src="https://img.shields.io/badge/license-GPL-blue"/>
 
 ## Table of Contents
-1. [Installation] (#instal)
-2. [Usage]
-3. [License]
-4. [Contributing]
-5. [Tests]
-6. [Questions] 
+* [Installation] 
+* [Usage]
+* [License]
+* [Contributing]
+* [Tests]
+* [Questions]
 
 ## Installation \n ${data.installation}
 ## Usage \n  ${data.usage}
-## License \n ${data.license}
+## License \n ${data.license} 
 ## Contributing \n ${data.contributing}
 ## Tests \n ${data.tests}
 ## Questions \n For questions related to this project, connect with me on GitHub at [GitHub](https://www.github.com/${data.username}). Or email me with questions at ${data.email}. 
