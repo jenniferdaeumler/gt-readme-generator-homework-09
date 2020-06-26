@@ -29,11 +29,6 @@ const questions = [
         name: "usage",
     },
     {
-        type: "input",
-        message: "Who are your collaborators?",
-        name: "credits",
-    },
-    {
         type: "list",
         message: "What is your licenses?",
         name: "license",
