@@ -46,7 +46,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What email should questions about your project be sent to?",
+        message: "What is your GitHub username?",
         name: "questions",
     },
 
