@@ -19,12 +19,15 @@ Clone the repo, and run the files in the server.
 ## Usage 
 The user will run node index.js in their terminal.  They will respond to all prompts with their keyboard, and hitting enter after typing their response.  They will use the arrow keys and enter for selecting the license.  Once all the prompts are answered, a markdown file named sampleReadMe is generated in the file.   
 
-<br>
-<br>Desktop view:<br>
-<img src="https://i.imgur.com/JDsQjbU.png?1">
-<br>Device view:<br>
-<img src="https://i.imgur.com/kFCVFa9.png?1">
-<br>
+
+Node.JS Prompts in Action
+
+<img src="./Assets/readmess.png"/>
+
+Sample Read Me As Seen in Browser
+
+<img src="./Assets/readmess2.png"/>
+
 
 
 ## Credits
