@@ -9,12 +9,13 @@ function generateMarkdown(data) {
 <img src="https://img.shields.io/badge/license-GPL-blue"/>
 
 ## Table of Contents
-* [Installation] 
-* [Usage]
-* [License]
-* [Contributing]
-* [Tests]
-* [Questions]
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
+
 
 ## Installation \n ${data.installation}
 ## Usage \n  ${data.usage}
